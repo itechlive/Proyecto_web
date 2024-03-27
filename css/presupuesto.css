@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#header {
+    background-color: #ccc;
+    height: 400px;
+    padding: 10px;
+}
+
+h1.titleblack {
+    color: black;
+    text-align: center;
+    margin-top: auto;
+}
+
+h1.titlewhite {
+    color: white;
+    text-align: center;
+    margin-top: auto;
+}
+
+.totals {
+font-size: 25px;
+letter-spacing: 1px;
+line-height: 1;
+margin-top: 50px;
+padding: auto;
+display: inline-block;
+}
+
+#border1, #border2{
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    }
+
+
+
+.column1, .column2 {
+    width: 50%;
+    border: 0.5px solid white;
+    float: left;
+    background: black;
+    margin-top: 1px;
+    height: auto;
+    box-sizing: border-box;
+    min-height: 57.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+select {
+  
+    background-color: white;
+    border: thin solid blue;
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  
+select.dropmenu {
+    background-image:
+      linear-gradient(45deg, transparent 50%, #26489a 50%),
+      linear-gradient(135deg, #26489a 50%, transparent 50%),
+      linear-gradient(to right, skyblue, skyblue);
+    background-position:
+      calc(100% - 20px) calc(1em + 2px),
+      calc(100% - 15px) calc(1em + 2px),
+      100% 0;
+    background-size:
+      5px 5px,
+      5px 5px,
+      2.5em 2.5em;
+    background-repeat: no-repeat;
+    appearance: none;
+  }
+
+  select.dropmenu option:first-child {
+    display: none;
+}
+
+  
+  select.dropmenu:focus {
+    background-image:
+      linear-gradient(45deg, white 50%, transparent 50%),
+      linear-gradient(135deg, transparent 50%, white 50%),
+      linear-gradient(to right, gray, gray);
+    background-position:
+      calc(100% - 15px) 1em,
+      calc(100% - 20px) 1em,
+      100% 0;
+    background-size:
+      5px 5px,
+      5px 5px,
+      2.5em 2.5em;
+    background-repeat: no-repeat;
+    border-color: grey;
+    outline: 0;
+  }
+
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.buttons button:hover {
+    background: #26489a;
+    color: #fff;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 25px;
+}
+
+.tabs input[type="radio"] {
+    display: none;
+}
+
+.tabs label {
+    padding: 10px 20px;
+    margin: 0 0px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    background: white;
+    color: #23242a;
+}
+
+.tabs .tablist {
+    width: 100%;
+    padding: 20px;
+    background: white;
+    order: 1;
+    display: none;
+}
+
+.tabs .tablist h1 {
+    font-size: 2em;
+    color: white;
+}
+
+.tabs input[type="radio"]:checked + label + .tablist {
+    display: block;
+}
+
+.tabs input[type="radio"]:checked + label {
+    background: #26489a;
+    color: #fff;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 20px;
+}
+
+table, th, td {
+    border: none;
+    
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th button,
+td button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    color: blue;
+    text-decoration: underline;
+}
+
+#grandTotal {
+    font-weight: bold;
+}
